@@ -2,7 +2,8 @@
 <head>
 </head>
 <body>
-<h1><b>pyfi</b> - Python Fidelity v0.1: An advanced module for Python <i>v0.1</i></h1>
+<h1><b>pyfi</b> - Python Fidelity v0.1: An advanced module for Python</h1>
+<h4>v0.1</h4>
 <hr>
 <h2>Current module tree:</h2>
 <ul>
