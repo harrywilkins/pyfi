@@ -15,7 +15,6 @@
     <li><b>'separateWords'</b><i>: If true will compare the input word-by-word (separated by spaces), to the inpFormat. If false, it will compare letter-by-letter.</i></li>
     <li><b>'prompt'</b><i>: Default value '>>> '. The text displayed by the 'input(prompt)' statement.</i></li>
     </ul>
-  </li>
   </ul>
 <li><b>Debug</b>.py
   <p><i>Supression</i>: [log, warning, error], values set to 1 to enable supression.</p>
