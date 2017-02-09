@@ -7,6 +7,7 @@
 <h2>Current module tree:</h2>
 <ul>
 <li><b>AdvancedInput</b>.py
+<p></p>
   <ul>
   <li><b>sinput</b>: Return type sensitive values based on input format.</li>
   <p></p>
@@ -19,6 +20,7 @@
     </ul>
   </li>
   </ul>
+<p></p>
 <li><b>Debug</b>.py
   <p><i>Supression</i>: [log, warning, error], values set to 1 to enable supression.</p>
   <ul>
@@ -26,11 +28,13 @@
   <li><b>PrintLog</b>: Will output the log for the session.</li>
   </ul>
 </li>
+
 <li><b>MathSeq</b>.py
   <ul>
   <li><b>fibonacci</b>: Output fibonacci sequence as array to an iterative degree.</li>
   </ul>
 </li>
+
 <li><b>Table</b>.py
   <p><i>Initiated by creating an instance of a table - Example: 'board = Table(xSize, ySize)'</i></p>
   <ul>
