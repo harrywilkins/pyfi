@@ -30,7 +30,7 @@
   </ul>
 </li>
 <li><b>Table</b>.py
-  <p><i>Upon creating an instance...</i></p>
+  <p><i>Initiated by creating an instance of a table - Example: 'board = Table(xSize, ySize)'</i></p>
   <ul>
   <li><b>GetCell</b>: Get the cell at the referenced position [x,y].</li>
   <li><b>ModifyCell</b>: Will set the referenced position [x,y] to the specified value.</li>
