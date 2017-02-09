@@ -9,7 +9,7 @@
 <li><b>AdvancedInput</b>.py
   <ul>
   <li><b>sinput</b>: Return type sensitive values based on input format</li>
-  <li><b>InputFormat(inpFormat, separateWords, prompt)</b>: Repeats 'input(prompt)' until it matches the given format.
+  <li><b>InputFormat(inpFormat, separateWords, prompt)</b>: Repeats 'input(prompt)' until it matches the given format.</li>
     <ul>
     <li><b>'inpFormat'</b><i>: Example layout: '['int', 'str', 'upper']'. The format to compare the entered input against.</i></li>
     <li><b>'separateWords'</b><i>: If true will compare the input word-by-word (separated by spaces), to the inpFormat. If false, it will compare letter-by-letter.</i></li>
