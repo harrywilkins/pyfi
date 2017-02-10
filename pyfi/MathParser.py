@@ -1,4 +1,4 @@
-class Variable():
+class Variable(): #Author Harry Wilkins
     variables = {}
     
     def __init__(self, _symbol='x', _coe='1', _exp='1', _sign='+'):
