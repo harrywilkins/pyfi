@@ -63,8 +63,8 @@
   <p></p>
   <li><b>InputFormat (inpFormat, separateWords, prompt): </b>Returns user input if it matches a given format</li>
     <ul>
-    <li><b>inpFormat - </b>The format to compare the input to in the form of a list
-    Useable data types: ["int", "float", "alpha", "lower", "upper", "str", "space"]</li>
+    <li><b>inpFormat - </b>The format to compare the input to in the form of a list</li>
+    <li><i>Useable data types: ["int", "float", "alpha", "lower", "upper", "str", "space"]</i></li>
     <li><b>separateWords - </b>If true, the method will compare the user input word-by-word. If false, letter-by-letter</li>
     <li><b>prompt - </b>The prompt displayed to the user at the input statement</li>
     </ul>
