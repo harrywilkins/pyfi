@@ -20,6 +20,20 @@
     </ul>
   </ul>
 
+<h3><br><b>AutoComplete</b>.py - Method that auto-completes unfinished words</h3>
+  <ul>
+  <li><b>AutoCompleteFast (word): </b>Returns the first exact match it finds. Faster than full check</li>
+    <ul>
+    <li><b>word - </b>The word to auto-complete. Format examples: "h*ll_" ["H",")","l","l","@"] - Both represent unfinished "hello"</li>
+    </ul>
+
+  <p></p>
+  <li><b>AutoCompleteFull (word): </b>Returns a list of the best matching words. Takes slightly longer</li>
+    <ul>
+    <li><b>word - </b>The word to auto-complete. Format examples: "ap,l%" ["a","P",":","l","."] - Both represent unfinished "apple"</li>
+    </ul>
+  </ul>
+  
 <h3><br><b>Debug</b>.py - A system for storing and printing logs</h3>
   <ul>
   <li><b>Log (logType, value): </b>Logs a value as a specific log type</li>
@@ -38,6 +52,23 @@
   <li><b>Fibonacci (iterations): </b>Displays the Fibonacci sequence</li>
     <ul>
     <li><b>iterations - </b>The number of iterations of the sequence to display</li>
+    </ul>
+  </ul>
+  
+  
+<h3><br><b>Searching</b>.py - List searching methods</h3>
+  <ul>
+  <li><b>BinarySearch (numList, item): </b>Returns index of an item in an ordered number list</li>
+    <ul>
+    <li><b>numList - </b>An ordered number list (int or float)</li>
+    <li><b>item - </b>The number (int or float) to look for in the specified list</li>
+    </ul>
+    
+  <p></p>
+  <li><b>LinearSearch (itemList, item): </b></li>
+    <ul>
+    <li><b>itemList - </b>A list of any values</li>
+    <li><b>item - </b>The item to find the index of in the list</li>
     </ul>
   </ul>
 
