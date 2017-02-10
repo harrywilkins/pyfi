@@ -1,7 +1,7 @@
 <html>
 
 <body>
-
+<h1><b>pyfi</b> - Python Fidelity v0.1: An advanced module for Python</h1>
 <h2>Current module tree:</h2>
 
 <h3><b>AdvancedInput</b>.py - Advanced methods for getting user inputs</h3>
