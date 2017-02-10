@@ -47,3 +47,88 @@
 </ul>
 </body>
 </html>
+
+
+<html>
+
+<body>
+
+<p><b>AdvancedInput</b>.py - Advanced methods for getting user inputs</p>
+  <ul>
+  <li><b>sinput (prompt): </b>Returns type sensitive values based on input format</li>
+    <ul>
+    <li><b>prompt - </b>The prompt displayed to the user at the input statement</li>
+    </ul>
+
+  <p></p>
+  <li><b>InputFormat (inpFormat, separateWords, prompt): </b>Returns user input if it matches a given format</li>
+    <ul>
+    <li><b>inpFormat - </b>The format to compare the input to in the form of a list
+    Useable data types: ["int", "float", "alpha", "lower", "upper", "str", "space"]</li>
+    <li><b>separateWords - </b>If true, the method will compare the user input word-by-word. If false, letter-by-letter</li>
+    <li><b>prompt - </b>The prompt displayed to the user at the input statement</li>
+    </ul>
+  </ul>
+
+<p><br><b>Debug</b>.py - A system for storing and printing logs</p>
+  <ul>
+  <li><b>Log (logType, value): </b>Logs a value as a specific log type</li>
+    <ul>
+    <li><b>logType - </b></li>
+    <li><b>value - </b></li>
+    </ul>
+
+  <p></p>
+  <li><b>PrintLog (): </b>Prints the current log</li>
+  </ul>
+
+
+<p><br><b>MathSeq</b>.py - A number of maths sequences</p>
+  <ul>
+  <li><b>Fibonacci (iterations): </b>Displays the Fibonacci sequence</li>
+    <ul>
+    <li><b>iterations - </b>The number of iterations of the sequence to display</li>
+    </ul>
+  </ul>
+
+
+<p><br><b>Table</b>.py - Table creation and manipulation module</p>
+  <ul>
+  <li><b>Table (x, y, cellValue): </b>Create a new Table class instance</li>
+    <ul>
+    <li><b>x - </b></li>
+    <li><b>y - </b></li>
+    </ul>
+
+  <p></p>
+  <li><b>DisplayBoard (spaces): </b>Display the current table/board</li>
+    <ul>
+    <li><b>spaces - </b></li>
+    </ul>
+    
+  <p></p>
+  <li><b>GetCell (x, y): </b>Get the value of a cell at position (x, y)</li>
+
+  <p></p>
+  <li><b>ModifyCell (x, y, newValue): </b>Modify the value of a cell at position (x, y)</li>
+    <ul>
+    <li><b>newValue - </b></li>
+    </ul>
+
+  <p></p>
+  <li><b>GetCellByNumber (cellNumber): </b>Get the value of a cell by cell number</li>
+    <ul>
+    <li><b>cellNumber - </b></li>
+    </ul>
+
+  <p></p>
+  <li><b>ModifyCellByNumber (cellNumber, newValue): </b>Modify the value of a cell by cell number</li>
+    <ul>
+    <li><b>cellNumber - </b></li>
+    <li><b>newValue - </b></li>
+    </ul>
+  </ul>
+
+</body>
+
+</html>
