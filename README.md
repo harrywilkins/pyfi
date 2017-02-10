@@ -20,7 +20,7 @@
     </ul>
   </ul>
 
-<h3><br><b>AutoComplete</b>.py - Method that autocompletes unfinished words</h3>
+<h3><br><b>AutoComplete</b>.py - Method that auto-completes unfinished words</h3>
   <ul>
   <li><b>AutoCompleteFast (word): </b>Returns the first exact match it finds. Faster than full check</li>
     <ul>
