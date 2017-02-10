@@ -59,7 +59,7 @@
   <ul>
   <li><b>sinput (prompt): </b>Returns type sensitive values based on input format</li>
     <ul>
-    <li><b>prompt - </b>The prompt displayed to the user at the input statement</li>
+    <li><b>prompt - </b>The prompt displayed to the user at the input statement. Default value ">>> "</li>
     </ul>
 
   <p></p>
@@ -68,7 +68,7 @@
     <li><b>inpFormat - </b>The format to compare the input to in the form of a list</li>
     <li><i>Useable data types: ["int", "float", "alpha", "lower", "upper", "str", "space"]</i></li>
     <li><b>separateWords - </b>If true, the method will compare the user input word-by-word. If false, letter-by-letter</li>
-    <li><b>prompt - </b>The prompt displayed to the user at the input statement</li>
+    <li><b>prompt - </b>The prompt displayed to the user at the input statement. Default value ">>> "</li>
     </ul>
   </ul>
 
@@ -98,14 +98,14 @@
   <ul>
   <li><b>Table (x, y, cellValue): </b>Create a new Table class instance</li>
     <ul>
-    <li><b>x - </b></li>
-    <li><b>y - </b></li>
+    <li><b>x - </b>The x location of the cell. This applies to the entire class</li>
+    <li><b>y - </b>The y location of the cell. This applies to the entire class</li>
     </ul>
 
   <p></p>
   <li><b>DisplayBoard (spaces): </b>Display the current table/board</li>
     <ul>
-    <li><b>spaces - </b></li>
+    <li><b>spaces - </b>The number of spaces between each element. Default value is 0</li>
     </ul>
     
   <p></p>
