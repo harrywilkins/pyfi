@@ -1,6 +1,6 @@
 class AdvancedInput():
-    def sinput(_prompt=">>> "):
-        #Author Harry Wilkins
+
+    def sinput(_prompt=">>> "): #Author Harry Wilkins
         #Input any value, returns converted value
         
         raw_flags = [0,0,0,0]
@@ -16,19 +16,18 @@ class AdvancedInput():
         return int(inp) if flags == [0,1,0,0] else (float(inp) if flags == [0,1,0,1] else str(inp)) #Compare and convert
 
 
-    def InputFormat(inpFormat, separateWords=True, prompt=">>> "):
-    #Author Aidan Horton
-    while True:
-        inp, match = input(prompt), True
-        _inp = inp.split() if separateWords else inp
-        if len(_inp) != len(inpFormat): continue
-        for i in range(len(inpFormat)):
-            if not SmartInput.DataType(_inp[i], inpFormat[i]): match = False
-        if match: return inp
+    def InputFormat(inpFormat, separateWords=True, prompt=">>> "): #Author Aidan Horton
+        while True:
+            inp, match = input(prompt), True
+            _inp = inp.split() if separateWords else inp
+            if len(_inp) != len(inpFormat): continue
+            for i in range(len(inpFormat)):
+                if not SmartInput.DataType(_inp[i], inpFormat[i]): match = False
+            if match: return inp
 
     #Sees if 'inp' is the specified 'dataType' - dataType has types - "int", "float", "alpha", "lower", "upper", "str", "space"
-    def DataType(inp, dataType):
-        #Author Aidan Horton
+    def DataType(inp, dataType): #Author Aidan Horton
+        
         if dataType == "int" or dataType == "float":
             try: return {"int":isinstance(eval(inp), int), "float":isinstance(eval(inp), float)}[dataType]
             except: return False

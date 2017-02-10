@@ -1,5 +1,4 @@
-class Debug():
-    #Author Harry Wilkins
+class Debug(): #Author Harry Wilkins
     supression = [0,0,0]
     log = {0:[],1:[],2:[]}
 
