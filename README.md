@@ -53,7 +53,9 @@
 
 <body>
 
-<p><b>AdvancedInput</b>.py - Advanced methods for getting user inputs</p>
+<h2>Current module tree:</h2>
+
+<h3><b>AdvancedInput</b>.py - Advanced methods for getting user inputs</h3>
   <ul>
   <li><b>sinput (prompt): </b>Returns type sensitive values based on input format</li>
     <ul>
@@ -70,7 +72,7 @@
     </ul>
   </ul>
 
-<p><br><b>Debug</b>.py - A system for storing and printing logs</p>
+<h3><br><b>Debug</b>.py - A system for storing and printing logs</h3>
   <ul>
   <li><b>Log (logType, value): </b>Logs a value as a specific log type</li>
     <ul>
@@ -83,7 +85,7 @@
   </ul>
 
 
-<p><br><b>MathSeq</b>.py - A number of maths sequences</p>
+<h3><br><b>MathSeq</b>.py - A number of maths sequences</h3>
   <ul>
   <li><b>Fibonacci (iterations): </b>Displays the Fibonacci sequence</li>
     <ul>
@@ -92,7 +94,7 @@
   </ul>
 
 
-<p><br><b>Table</b>.py - Table creation and manipulation module</p>
+<h3><br><b>Table</b>.py - Table creation and manipulation module</h3>
   <ul>
   <li><b>Table (x, y, cellValue): </b>Create a new Table class instance</li>
     <ul>
