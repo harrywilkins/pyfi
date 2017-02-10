@@ -9,10 +9,10 @@ class AutoComplete(): #Author Aidan Horton
                     if word[i].isalpha() and word[i] != currWord[i]:
                         match = False
                         break
-                if match: return currWords
+                if match: return currWord
                         
     def AutoCompleteFull(self, word):
-        engDict, i, bestWords = open("Dictionary.txt", "r"), 0, []
+        engDict, i, bestWords, word = open("Dictionary.txt", "r"), 0, [], word.lower()
         while i != "*":
             currWord, match = engDict.readline().rstrip(), True
             if len(currWord) == len(word):
