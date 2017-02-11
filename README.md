@@ -93,20 +93,20 @@
   <p></p>
   <li><b>ModifyCell (x, y, newValue): </b>Modify the value of a cell at position (x, y)</li>
     <ul>
-    <li><b>newValue - </b></li>
+    <li><b>newValue - </b>The new value you would like the cell to take</li>
     </ul>
 
   <p></p>
   <li><b>GetCellByNumber (cellNumber): </b>Get the value of a cell by cell number</li>
     <ul>
-    <li><b>cellNumber - </b></li>
+    <li><b>cellNumber - </b>The cell number, the top-left cell is 0, and from there it reads in the way a book does</li>
     </ul>
 
   <p></p>
   <li><b>ModifyCellByNumber (cellNumber, newValue): </b>Modify the value of a cell by cell number</li>
     <ul>
-    <li><b>cellNumber - </b></li>
-    <li><b>newValue - </b></li>
+    <li><b>cellNumber - </b>The cell number, the top-left cell is 0, and from there it reads in the way a book does</li>
+    <li><b>newValue - </b>The new value you would like the cell to take</li>
     </ul>
   </ul>
 
