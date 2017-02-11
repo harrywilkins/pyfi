@@ -32,7 +32,20 @@
     <ul>
     <li><b>word - </b>The word to auto-complete. Format examples: "ap,l%" ["a","P",":","l","."] - Both represent unfinished "apple"</li>
     </ul>
+  
+  <p></p>
+  <li><b>SpellCheck (word): </b>Takes a word, and returns the closest match of the same length in the English dictionary</li>
+    <ul>
+    <li><b>word - </b>Any alphabetic string. It can include numbers and spaces, but it will treat it as a single word</li>
+    </ul>
+  
+  <p></p>
+  <li><b>SCInput (prompt): </b>Type in a sentence and it will return an 'SpellCheck()' version of each word as a sentence</li>
+    <ul>
+    <li><b>prompt - </b>Default value ">>> " - The prompt displayed to the user by the input statement</li>
+    </ul>
   </ul>
+  
   
 <h3><br><b>Debug</b>.py - A system for storing and printing logs</h3>
   <ul>
