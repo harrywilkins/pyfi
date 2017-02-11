@@ -35,4 +35,5 @@ class AutoComplete(): #Author Aidan Horton
         return bestScore[0]
 
     def SCInput(prompt=">>> "): #Author Harry Wilkins
-        return " ".join([str(AutoComplete.SpellCheck(word)) for word in input(prompt).split(" ")])
+        for word in input(prompt).split(): return ''.join(AutoComplete.SpellCheck(word[:-1] if "," == word[-1] or "." == word[-1] else word))
+        #return " ".join([str(AutoComplete.SpellCheck(word)) for word in input(prompt).split(" ")])
