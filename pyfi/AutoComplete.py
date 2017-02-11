@@ -33,6 +33,3 @@ class AutoComplete(): #Author Aidan Horton
                     if word[i] == currWord[i]: score += 1
                 if score > bestScore[1]: bestScore = [currWord, score]
         return bestScore[0]
-
-    def SPInput(prompt=">>> "): #Author Harry Wilkins
-        return " ".join([str(AutoComplete.SpellCheck(word)) for word in input(prompt).split(" ")])
