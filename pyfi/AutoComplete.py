@@ -1,6 +1,6 @@
 class AutoComplete(): #Author Aidan Horton
     
-    def AutoCompleteFast(self, word):
+    def AutoCompleteFast(word):
         engDict, i, word = open("Dictionary.txt", "r"), 0, word.lower()
         while i != "*":
             currWord, match = engDict.readline().rstrip(), True
@@ -11,7 +11,7 @@ class AutoComplete(): #Author Aidan Horton
                         break
                 if match: return currWord
                         
-    def AutoCompleteFull(self, word):
+    def AutoCompleteFull(word):
         engDict, currWord, bestWords, word = open("Dictionary.txt", "r"), "", [], word.lower()
         while currWord != "*":
             currWord, match = engDict.readline().rstrip(), True
@@ -23,7 +23,7 @@ class AutoComplete(): #Author Aidan Horton
                 if match: bestWords.append(currWord)
         return bestWords
 
-    def SpellCheck(self, word):
+    def SpellCheck(word):
         engDict, currWord, bestScore, word = open("Dictionary.txt", "r"), "", ["", 0], word.lower()
         while currWord != "*":
             currWord, match = engDict.readline().rstrip(), True
