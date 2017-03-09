@@ -1,37 +1,33 @@
-class AdvancedInput():
-
-    def sinput(_prompt=">>> "): #Author Harry Wilkins
-        #Input any value, returns converted value
+def sinput(_prompt=">>> "): #Author Harry Wilkins
+    #Input any value, returns converted value
         
-        raw_flags = [0,0,0,0]
-        inp = input(_prompt)
+    raw_flags = [0,0,0,0]
+    inp = input(_prompt)
 
-        for c in inp:
-            raw_flags[0] += 1 if c.isalpha() else 0 #Character is chr
-            raw_flags[1] += 1 if c.isdigit() else 0 #Character is int
-            raw_flags[2] += 1 if (c in '!"#$%&\'()*+,-/:;<=>?@[\\]^_`{|}~') else 0 #Character is punctuation aside from '.'
-            raw_flags[3] += 1 if c == "." else 0 #Character is '.'
+    for c in inp:
+        raw_flags[0] += 1 if c.isalpha() else 0 #Character is chr
+        raw_flags[1] += 1 if c.isdigit() else 0 #Character is int
+        raw_flags[2] += 1 if (c in '!"#$%&\'()*+,-/:;<=>?@[\\]^_`{|}~') else 0 #Character is punctuation aside from '.'
+        raw_flags[3] += 1 if c == "." else 0 #Character is '.'
             
-        flags = [(1 if raw_flags[raw_flags.index(x)] >= 1 else 0) for x in raw_flags] #Normalise flags
-        return int(inp) if flags == [0,1,0,0] else (float(inp) if flags == [0,1,0,1] else str(inp)) #Compare and convert
+    flags = [(1 if raw_flags[raw_flags.index(x)] >= 1 else 0) for x in raw_flags] #Normalise flags
+    return int(inp) if flags == [0,1,0,0] else (float(inp) if flags == [0,1,0,1] else str(inp)) #Compare and convert
 
+def InputFormat(inpFormat, separateWords=True, prompt=">>> "): #Author Aidan Horton
+    while True:
+        inp, match = input(prompt), True                            #Initialise variables
+        _inp = inp.split() if separateWords else inp                #Splits the word into list if 'seperateWords' is true
+        if len(_inp) != len(inpFormat): continue                    #If input length is smaller than the 'inputformat', skip iteration
+        for i in range(len(inpFormat)):
+            if not DataType(_inp[i], inpFormat[i]): match = False   #If char/string of input doesn't match specified data type, match = false
+        if match: return inp                                        #If match is true, meaning all parts of the input match specified data type, return the input
 
-    def InputFormat(inpFormat, separateWords=True, prompt=">>> "): #Author Aidan Horton
-        while True:
-            inp, match = input(prompt), True
-            _inp = inp.split() if separateWords else inp
-            if len(_inp) != len(inpFormat): continue
-            for i in range(len(inpFormat)):
-                if not SmartInput.DataType(_inp[i], inpFormat[i]): match = False
-            if match: return inp
-
-    #Sees if 'inp' is the specified 'dataType' - dataType has types - "int", "float", "alpha", "lower", "upper", "str", "space"
-    def DataType(inp, dataType): #Author Aidan Horton
-        
-        if dataType == "int" or dataType == "float":
-            try: return {"int":isinstance(eval(inp), int), "float":isinstance(eval(inp), float)}[dataType]
-            except: return False
-        return {"lower":inp.islower(), "alpha":inp.isalpha(), "upper":inp.isupper(), "space":inp.isspace(), "str":True}[dataType]
+#Sees if 'inp' is the specified 'dataType' - dataType has types - "int", "float", "alpha", "lower", "upper", "str", "space"
+def DataType(inp, dataType): #Author Aidan Horton
+    if dataType == "int" or dataType == "float":
+        try: return {"int":isinstance(eval(inp), int), "float":isinstance(eval(inp), float)}[dataType]                          #Returns true/false depending on if matching data type
+        except: return False
+    return {"lower":inp.islower(), "alpha":inp.isalpha(), "upper":inp.isupper(), "space":inp.isspace(), "str":True}[dataType]   #Returns true/false depending on if matching data type
 
 
 
