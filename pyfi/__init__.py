@@ -5,3 +5,4 @@ from .MathSeq import *
 from .Searching import *
 from .Debug import *
 from .Table import *
+from .NeuralNetwork import *
