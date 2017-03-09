@@ -6,6 +6,7 @@ class Variable(): #Author Harry Wilkins
         self.coe = _coe
         self.exp = _exp
         self.sign = _sign
+        
 class Value():
     
     def __init__(self, _value=0, _sign='+'):
