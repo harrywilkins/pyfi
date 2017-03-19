@@ -92,6 +92,7 @@
     <ul>
     <li><b>x - </b>The x location of the cell. This applies to the entire class</li>
     <li><b>y - </b>The y location of the cell. This applies to the entire class</li>
+    <li>(0, 0) represents the top left of the table when displayed</li>
     </ul>
 
   <p></p>
