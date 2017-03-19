@@ -15,7 +15,7 @@
     <ul>
     <li><b>inpFormat - </b>The format to compare the input to in the form of a list</li>
     <li><i>Useable data types: ["int", "float", "alpha", "lower", "upper", "str", "space"]</i></li>
-    <li><b>separateWords - </b>If true, the method will compare the user input word-by-word. If false, letter-by-letter</li>
+    <li><b>separateWords - </b>If true, the method will compare the user input word-by-word. If false, character-by-character</li>
     <li><b>prompt - </b>The prompt displayed to the user at the input statement. Default value ">>> "</li>
     </ul>
   </ul>
@@ -92,6 +92,7 @@
     <ul>
     <li><b>x - </b>The x location of the cell. This applies to the entire class</li>
     <li><b>y - </b>The y location of the cell. This applies to the entire class</li>
+    <li>(0, 0) represents the top left of the table when displayed</li>
     </ul>
 
   <p></p>
