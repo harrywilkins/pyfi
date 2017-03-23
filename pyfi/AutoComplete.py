@@ -32,6 +32,7 @@ def SpellCheck(word): #Author Aidan Horton
             if score > bestScore[1]: bestScore = [currWord, score]
     return bestScore[0]
 
-def SCInput(prompt=">>> "): #Author Harry Wilkins
-    for word in input(prompt).split(): return ''.join(AutoComplete.SpellCheck(word[:-1] if "," == word[-1] or "." == word[-1] else word))
-    #return " ".join([str(AutoComplete.SpellCheck(word)) for word in input(prompt).split(" ")])
+def SCInput(prompt=">>> "):
+    sentence = []
+    for word in input(prompt).split(): sentence.append(SpellCheck(word[:-1] if "," == word[-1] or "." == word[-1] else word))
+    return sentence
